@@ -21,6 +21,6 @@ RUN mkdir /opt/nginx/http.conf.d && mkdir /opt/nginx/stream.conf.d
 
 WORKDIR /
 
-EXPOSE 80 443 5008
+EXPOSE 80 443 5080
 
 CMD ["/opt/nginx/sbin/nginx", "-g", "daemon off;"]
