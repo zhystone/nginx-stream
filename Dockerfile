@@ -103,8 +103,6 @@ RUN set -x \
     && ln -sf /dev/stdout /var/log/nginx/access.log \
     && ln -sf /dev/stderr /var/log/nginx/error.log
 
-ADD nginx.conf \etc\nginx\nginx.conf
-
 EXPOSE 80 5080
 
 STOPSIGNAL SIGTERM
